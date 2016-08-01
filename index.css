@@ -1,4 +1,10 @@
+body{
+    overflow-y: hidden;
+}
+
 #rcorners1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
     border-radius: 1.7vw;
     padding: 1.5vw;
@@ -20,9 +26,120 @@
 }
 
 #RecRound{
+    -webkit-clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /*transition: all 3s ease-in-out;*/
+    transform: translate(-50%, -40%);
+    
+    -webkit-animation-name: circOut;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: circOut;
+    animation-duration: 2s;
+}
+
+#circle {
+	width: 6.5vw;
+	height: 6.5vw;
+	background: black;
+	-moz-border-radius: 10vw;
+	-webkit-border-radius: 10vw;
+	border-radius: 10vw;
     margin: 0;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
+    
+    -webkit-animation-name: UpandGone;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-name: UpandGone;
+    animation-duration: 1.5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes circOut {
+    from {
+    -webkit-clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
+    }
+    to {
+    -webkit-clip-path: circle(100% at 50% 50%);
+    clip-path: circle(100% at 50% 50%);
+    }
+}
+
+/* Standard syntax */
+@keyframes circOut {
+    from {
+    -webkit-clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at 50% 50%);
+    }
+    to {
+    -webkit-clip-path: circle(100% at 50% 50%);
+    clip-path: circle(100% at 50% 50%);
+    }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes UpandGone {
+    0%{
+    margin: 0;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: scale(1,1);
+    }
+        
+    80%{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: scale(1,1);
+    }
+    
+    100%{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: scale(0,0);
+    }
+}
+
+/* Standard syntax */
+@keyframes UpandGone {
+    0%{
+    margin: 0;
+    position: absolute;
+    top: 110%;
+    left: 46.5%;
+    transform: scale(1,1);
+    }
+        
+    90%{
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 46.5%;
+    transform: scale(1,1);
+    }
+    
+    100%{
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 46.5%;
+    transform: scale(0,0);
+    }
 }
