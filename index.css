@@ -77,8 +77,16 @@ u:hover{
     border-bottom: 1px solid black;
 }
 
+#orr{
+    font-size: 1vw;
+    padding-left: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
 #listt{
     cursor:pointer;
+    font-weight: 400;
     font-size: 3.5vw;
     letter-spacing: .25vw;
     font-family: 'Roboto', sans-serif;
@@ -87,9 +95,9 @@ u:hover{
     margin-top: 0px;
     margin-bottom: 0px;
     position: absolute;
-    top: 61%;
+    top: 63%;
     left: 53%;
-    transform: translate(-53%, -61%);
+    transform: translate(-53%, -63%);
     opacity: 0;
     visibility: hidden;
     
