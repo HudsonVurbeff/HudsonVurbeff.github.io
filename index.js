@@ -7,10 +7,14 @@ if(!is_chrome)
 }
 
 window.onload = function(){
-var e = document.getElementById("circle");
-e.addEventListener("animationend", myEndFunction);
+document.getElementById("circle").addEventListener("animationend", myEndFunction);
+document.getElementById("hello").addEventListener("animationend", myEndFunction2);
 }
 
 function myEndFunction() {
-    document.getElementById("RecRound").style.animationPlayState = "running";
+    document.getElementById("hello").style.animationPlayState = "running";
+}
+
+function myEndFunction2() {
+    document.getElementById("listt").style.animationPlayState = "running";
 }
