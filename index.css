@@ -1,299 +1,62 @@
 body{
-    overflow-y: hidden;
-}
-
-#rcorners1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    border-radius: 1.7vw;
-    padding: 1.5vw;
-    width: 50vw;
-    height: 3vw;
-    border-style: solid;
-    border-width: 2px;
-}
-
-#rcornersText{
-    color: black;
-    font-size: 2.2vw;
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-#RecRound{
-    -webkit-clip-path: circle(0% at 50% 50%);
-    clip-path: circle(0% at 50% 50%);
+#cover{
+    width: 100%;
+    height: 100%;
     margin: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    /*transition: all 3s ease-in-out;*/
-    transform: translate(-50%, -40%);
-    
-    -webkit-animation-name: circOut;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    animation-name: circOut;
-    animation-duration: 2s;
-}
-
-#hello{
-    margin: 0;
-    font-size: 6vw;
-    color: #2F2F2F;
-    letter-spacing: 1.4vw;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    transform: translate(-55%, -40%);
-    opacity: 0;
-    
-    -webkit-animation-name: Reveal;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    animation-name: Reveal;
-    animation-duration: 2s;
-}
-
-u {
-    text-decoration: none;
-    border-bottom: 0px solid black;
-}
-
-u:hover{
-    text-decoration: none;
-    border-bottom: 1px solid black;
-}
-
-#orr{
-    font-size: 1vw;
-    padding-left: 1.5vw;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-}
-
-#listt{
-    cursor:pointer;
-    font-weight: 400;
-    font-size: 3.5vw;
-    letter-spacing: .25vw;
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    position: absolute;
-    top: 63%;
-    left: 53%;
-    transform: translate(-53%, -63%);
-    opacity: 0;
-    visibility: hidden;
-    
-    -webkit-animation-name: Downandreveal;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    animation-name: Downandreveal;
-    animation-duration: 2s;
-}
-
-
-#circle {
-    text-overflow: clip;
-    max-height: 6.5vw;
     display: table;
-    text-align: center;
-	width: 6.5vw;
-	height: 6.5vw;
-	background: black;
-	-moz-border-radius: 10vw;
-	-webkit-border-radius: 10vw;
-	border-radius: 10vw;
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    left: 46.5%;
-    
-    -webkit-animation-name: UpandGone;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    animation-name: UpandGone;
-    animation-duration: 4s;
 }
 
-#Qmark{
-    color: white;
+#line{
+    background-color: black;
     display: table-cell;
+    text-align: center;
     vertical-align: middle;
-    font-size: 5.6vw;
-    
-    -webkit-animation-name: spinNreveal;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    animation-name: spinNreveal;
-    animation-duration: 4s;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes circOut {
-    from {
-    -webkit-clip-path: circle(0% at 50% 50%);
-    clip-path: circle(0% at 50% 50%);
-    }
-    to {
-    -webkit-clip-path: circle(100% at 50% 50%);
-    clip-path: circle(100% at 50% 50%);
-    }
+#nameHolder{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 7vmax;
 }
 
-/* Standard syntax */
-@keyframes circOut {
-    from {
-    -webkit-clip-path: circle(0% at 50% 50%);
-    clip-path: circle(0% at 50% 50%);
-    }
-    to {
-    -webkit-clip-path: circle(100% at 50% 50%);
-    clip-path: circle(100% at 50% 50%);
-    }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes UpandGone {
-    0%{
+#Fname{
     margin: 0;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: scale(1,1);
-    }
-        
-    80%{
-    margin: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: scale(1,1);
-    }
-    
-    100%{
-    margin: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: scale(0,0);
-    }
+    font-size: 7vmax;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Standard syntax */
-@keyframes UpandGone {
-    0%{
-    top: 110%;
-    left: 46.5%;
-    transform: scale(1,1);
-    }
-        
-    40%{
-    top: 35%;
-    left: 46.5%;
-    transform: scale(1,1);
-    }
-    
-    60%{
-    top: 35%;
-    left: 46.5%;
-    transform: scale(1,1);
-    }
-    
-    100%{
-    top: 35%;
-    left: 37%;
-    transform: scale(1,1);
-    }
+#TwoCircles{
+    display: inline-flex;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes spinNreveal {
-    0%{
-    opacity: 0;
-    transform: rotate(100deg);
-    }
-        
-    40%{
-    opacity: 0;
-    transform: rotate(100deg);
-    }
-    
-    60%{
-    opacity: 1;
-    transform: rotate(0deg);
-    }
-    
-    100%{
-    opacity: 1;
-    transform: rotate(0deg);
-    }
+#Personal{
+    margin-right: 7vmax;
+    margin-top: 2.5vmax;
+    margin-left: 0;
+    margin-bottom: 0;
+    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
+    width: 8vmax;
+	height: 8vmax;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 4vmax;
 }
 
-/* Standard syntax */
-@keyframes spinNreveal {
-    0%{
-    opacity: 0;
-    transform: rotate(100deg);
-    }
-        
-    40%{
-    opacity: 0;
-    transform: rotate(100deg);
-    }
-    
-    60%{
-    opacity: 1;
-    transform: rotate(0deg);
-    }
-    
-    100%{
-    opacity: 1;
-    transform: rotate(0deg);
-    }
-}
-
-/* Standard syntax */
-@keyframes Reveal {
-    0%{
-    opacity: 0;
-    }
-    100%{
-    opacity: 1;
-    }
-}
-
-/* Standard syntax */
-@keyframes Downandreveal {
-    0%{
-    opacity: 0;
-        top: 58%;
-    visibility: visible;
-    }
-    100%{
-    opacity: 1;
-        top: 61%;
-    visibility: visible;
-    }
+#Business{
+    margin-left: 7vmax;
+    margin-top: 2.5vmax;
+    margin-right: 0;
+    margin-bottom: 0;
+    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
+    width: 8vmax;
+	height: 8vmax;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 4vmax;
 }
