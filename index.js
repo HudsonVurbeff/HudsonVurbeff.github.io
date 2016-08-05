@@ -7,14 +7,20 @@ if(!is_chrome)
 }
 
 window.onload = function(){
-document.getElementById("circle").addEventListener("animationend", myEndFunction);
-document.getElementById("hello").addEventListener("animationend", myEndFunction2);
+document.getElementById("Fname").addEventListener("animationend", myEndFunction3);
+document.getElementById("Personal").addEventListener("animationend", myEndFunction);
+document.getElementById("Business").addEventListener("animationend", myEndFunction2);
 }
 
 function myEndFunction() {
-    document.getElementById("hello").style.animationPlayState = "running";
+    document.getElementById("Pname").style.animationPlayState = "running";
 }
 
 function myEndFunction2() {
-    document.getElementById("listt").style.animationPlayState = "running";
+    document.getElementById("Bname").style.animationPlayState = "running";
+}
+
+function myEndFunction3() {
+    document.getElementById("Personal").style.animationPlayState = "running";
+    document.getElementById("Business").style.animationPlayState = "running";
 }
