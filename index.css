@@ -25,7 +25,7 @@ body{
 
 #Fname{
     margin: 0;
-    font-size: 7vmax;
+    font-size: 8vmax;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -59,6 +59,7 @@ body{
 }
 
 #Pcircle{
+    display: table;
     box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
     width: 8vmax;
 	height: 8vmax;
@@ -68,7 +69,14 @@ body{
 	border-radius: 4vmax;
 }
 
+#svgHolder{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #Bcircle{
+    display: table;
     box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
     width: 8vmax;
 	height: 8vmax;
