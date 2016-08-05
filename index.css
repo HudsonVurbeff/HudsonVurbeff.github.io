@@ -27,6 +27,23 @@ body{
     margin: 0;
     font-size: 8vmax;
     font-family: 'Josefin Sans', sans-serif;
+    
+    -webkit-animation-name: Fname;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-name: Fname;
+    animation-duration: 1.5s;
+}
+
+/* Standard syntax */
+@keyframes Fname {
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
 }
 
 #TwoCircles{
@@ -49,6 +66,15 @@ body{
     margin-top: 2.5vmax;
     margin-left: 0;
     margin-bottom: 0;
+    
+    -webkit-animation-name: Personal;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: Personal;
+    animation-duration: .6s;
 }
 
 #Business{
@@ -56,9 +82,38 @@ body{
     margin-top: 2.5vmax;
     margin-right: 0;
     margin-bottom: 0;
+    
+    -webkit-animation-name: Business;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: Business;
+    animation-duration: .6s;
 }
 
-#Pcircle{
+/* Standard syntax */
+@keyframes Personal {
+    0%{
+    transform: scale(0);
+    }
+    100%{
+    transform: scale(1);
+    }
+}
+
+/* Standard syntax */
+@keyframes Business {
+    0%{
+    transform: scale(0);
+    }
+    100%{
+    transform: scale(1);
+    }
+}
+
+#Pcircle{    
     display: table;
     box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
     width: 8vmax;
@@ -69,13 +124,18 @@ body{
 	border-radius: 4vmax;
 }
 
-#svgHolder{
+#Pcircle:hover{
+    box-shadow: -4px 4px 12px -1px rgba(0,0,0,0.41);
+}
+
+#svgHolder{    
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 
 #Bcircle{
+    clip-path: circle(0% at 50% 50%);
     display: table;
     box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
     width: 8vmax;
@@ -84,6 +144,10 @@ body{
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 4vmax;
+}
+
+#Bcircle:hover{
+    box-shadow: -4px 4px 12px -1px rgba(0,0,0,0.41);
 }
 
 #Pname{
@@ -92,6 +156,15 @@ body{
     font-size: 1.23vmax;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    
+    -webkit-animation-name: Pname;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: Pname;
+    animation-duration: 2.5s;
 }
 
 #Bname{
@@ -100,4 +173,33 @@ body{
     font-size: 1.23vmax;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    
+    -webkit-animation-name: Bname;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: Bname;
+    animation-duration: 2.5s;
+}
+
+/* Standard syntax */
+@keyframes Pname {
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes Bname {
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
 }
