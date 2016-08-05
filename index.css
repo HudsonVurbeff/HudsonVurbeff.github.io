@@ -33,18 +33,22 @@ body{
     display: inline-flex;
 }
 
+#TwoNames{
+    display: inline-flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#TnamesHolder{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 #Personal{
     margin-right: 7vmax;
     margin-top: 2.5vmax;
     margin-left: 0;
     margin-bottom: 0;
-    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
-    width: 8vmax;
-	height: 8vmax;
-	background: red;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 4vmax;
 }
 
 #Business{
@@ -52,11 +56,40 @@ body{
     margin-top: 2.5vmax;
     margin-right: 0;
     margin-bottom: 0;
+}
+
+#Pcircle{
     box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
     width: 8vmax;
 	height: 8vmax;
-	background: red;
+	background: white;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 4vmax;
+}
+
+#Bcircle{
+    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
+    width: 8vmax;
+	height: 8vmax;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 4vmax;
+}
+
+#Pname{
+    margin-top: .5vmax;
+    margin-bottom: 0px;
+    font-size: 1.23vmax;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#Bname{
+    margin-top: .5vmax;
+    margin-bottom: 0px;
+    font-size: 1.23vmax;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
