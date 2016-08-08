@@ -2,7 +2,7 @@ var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 
 if(!is_chrome)
 {
-    window.location.href = "http://stackoverflow.com";
+    //window.location.href = "http://stackoverflow.com";
     //window.location.href = "someOtherFile.html";
 }
 
@@ -37,6 +37,7 @@ var $this = $("#Pcircle");
 document.getElementById("scrollout").style.top = centerY;
 document.getElementById("scrollout").style.left = centerX;
 document.getElementById("scrollOutCircle").style.animationPlayState = "running";
+document.getElementById("Personal").style.zIndex = 2;
 }
 
 function fullestt2(){
@@ -51,4 +52,5 @@ var $this = $("#Bcircle");
 document.getElementById("scrollout").style.top = centerY;
 document.getElementById("scrollout").style.left = centerX;
 document.getElementById("scrollOutCircle").style.animationPlayState = "running";
+document.getElementById("Business").style.zIndex = 2;
 }
