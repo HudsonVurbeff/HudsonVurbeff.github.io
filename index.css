@@ -25,7 +25,7 @@ body{
     
     width: 140vmax;
 	height: 140vmax;
-	background: white;
+	background: black;
 	-moz-border-radius: 70vmax;
 	-webkit-border-radius: 70vmax;
 	border-radius: 70vmax;
@@ -47,7 +47,6 @@ body{
     0%{
     width: 0vmax;
 	height: 0vmax;
-	background: white;
 	-moz-border-radius: 0vmax;
 	-webkit-border-radius: 0vmax;
 	border-radius: 0vmax;
@@ -55,7 +54,6 @@ body{
     100%{
     width: 140vmax;
 	height: 140vmax;
-	background: white;
 	-moz-border-radius: 70vmax;
 	-webkit-border-radius: 70vmax;
 	border-radius: 70vmax;
