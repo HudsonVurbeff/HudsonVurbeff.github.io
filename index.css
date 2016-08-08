@@ -62,6 +62,7 @@ body{
     margin: 0;
     display: table;
     overflow: hidden;
+    position: fixed;
 }
 
 #line{
