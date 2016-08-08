@@ -24,3 +24,31 @@ function myEndFunction3() {
     document.getElementById("Personal").style.animationPlayState = "running";
     document.getElementById("Business").style.animationPlayState = "running";
 }
+
+function fullestt(){
+var $this = $("#Pcircle");
+ var offset = $this.offset();
+ var width = $this.width();
+ var height = $this.height();
+
+ var centerX = offset.left + width / 2;
+ var centerY = offset.top + height / 2;
+ console.log(centerX ,centerY);
+document.getElementById("scrollout").style.top = centerY;
+document.getElementById("scrollout").style.left = centerX;
+document.getElementById("scrollOutCircle").style.animationPlayState = "running";
+}
+
+function fullestt2(){
+var $this = $("#Bcircle");
+ var offset = $this.offset();
+ var width = $this.width();
+ var height = $this.height();
+
+ var centerX = offset.left + width / 2;
+ var centerY = offset.top + height / 2;
+ console.log(centerX ,centerY);
+document.getElementById("scrollout").style.top = centerY;
+document.getElementById("scrollout").style.left = centerX;
+document.getElementById("scrollOutCircle").style.animationPlayState = "running";
+}
