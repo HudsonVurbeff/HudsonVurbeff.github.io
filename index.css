@@ -1,5 +1,65 @@
 body{
     margin: 0;
+    overflow: hidden;
+}
+
+#scrollout{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#shholer{
+    
+}
+
+#scrollOutCircle{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    width: 140vmax;
+	height: 140vmax;
+	background: white;
+	-moz-border-radius: 70vmax;
+	-webkit-border-radius: 70vmax;
+	border-radius: 70vmax;
+    
+    -webkit-animation-name: sOut;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: sOut;
+    animation-duration: .5s;
+}
+
+/* Standard syntax */
+@keyframes sOut {
+    0%{
+    width: 0vmax;
+	height: 0vmax;
+	background: white;
+	-moz-border-radius: 0vmax;
+	-webkit-border-radius: 0vmax;
+	border-radius: 0vmax;
+    }
+    100%{
+    width: 140vmax;
+	height: 140vmax;
+	background: white;
+	-moz-border-radius: 70vmax;
+	-webkit-border-radius: 70vmax;
+	border-radius: 70vmax;
+    }
 }
 
 #cover{
@@ -119,13 +179,47 @@ body{
     width: 8vmax;
 	height: 8vmax;
 	background: white;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
+	-moz-border-radius: 4vmax;
+	-webkit-border-radius: 4vmax;
 	border-radius: 4vmax;
 }
 
 #Pcircle:hover{
     box-shadow: -4px 4px 12px -1px rgba(0,0,0,0.41);
+}
+
+#ClickCircle{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 500px;
+	height: 500px;
+	background: red;
+	-moz-border-radius: 1000px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+    
+    -webkit-animation-name: ClickCircle;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    animation-name: ClickCircle;
+    animation-duration: 3s;
+}
+
+/* Standard syntax */
+@keyframes ClickCircle {
+    0%{
+    transform: scale(0);
+    }
+    100%{
+    transform: scale(1);
+    }
 }
 
 #svgHolder{    
