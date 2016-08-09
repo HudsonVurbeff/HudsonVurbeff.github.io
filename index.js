@@ -61,8 +61,8 @@ PageHandler = 2;
 
 function redirect(){
     if(PageHandler == 1){
-        window.location.href = "Personal.html"
+        window.location.href = "personal.html"
     } else if(PageHandler == 2){
-        window.location.href = "Business.html"
+        window.location.href = "business.html"
     }
 }
