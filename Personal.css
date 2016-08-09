@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#cover{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: table;
+    overflow: hidden!important;
+    position: fixed;
+}
+
+#txt{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5vmax;
+    padding-bottom: 8vmax;
+}
+
+#zHolder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#zIn{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    width: 140vmax;
+	height: 140vmax;
+    background-color: black;
+	-moz-border-radius: 70vmax;
+	-webkit-border-radius: 70vmax;
+	border-radius: 70vmax;
+    
+    -webkit-animation-name: zIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-name: zIn;
+    animation-duration: .5s;
+}
+
+/* Standard syntax */
+@keyframes zIn {
+    0%{
+    width: 140vmax;
+	height: 140vmax;
+	-moz-border-radius: 70vmax;
+	-webkit-border-radius: 70vmax;
+	border-radius: 70vmax;
+    }
+    100%{
+    width: 0vmax;
+	height: 0vmax;
+	-moz-border-radius: 0vmax;
+	-webkit-border-radius: 0vmax;
+	border-radius: 0vmax;
+    }
+}
