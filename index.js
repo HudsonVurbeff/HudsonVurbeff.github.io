@@ -1,4 +1,5 @@
 var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+var PageHandler = 0;
 
 if(!is_chrome)
 {
@@ -10,6 +11,7 @@ window.onload = function(){
 document.getElementById("Fname").addEventListener("animationend", myEndFunction3);
 document.getElementById("Personal").addEventListener("animationend", myEndFunction);
 document.getElementById("Business").addEventListener("animationend", myEndFunction2);
+document.getElementById("scrollOutCircle").addEventListener("animationend", redirect);
 }
 
 function myEndFunction() {
@@ -38,6 +40,7 @@ document.getElementById("scrollout").style.top = centerY;
 document.getElementById("scrollout").style.left = centerX;
 document.getElementById("scrollOutCircle").style.animationPlayState = "running";
 document.getElementById("Personal").style.zIndex = 2;
+PageHandler = 1;
 }
 
 function fullestt2(){
@@ -53,4 +56,13 @@ document.getElementById("scrollout").style.top = centerY;
 document.getElementById("scrollout").style.left = centerX;
 document.getElementById("scrollOutCircle").style.animationPlayState = "running";
 document.getElementById("Business").style.zIndex = 2;
+PageHandler = 2;
+}
+
+function redirect(){
+    if(PageHandler == 1){
+        window.location.href = "Personal.html"
+    } else if(PageHandler == 2){
+        window.location.href = "Business.html"
+    }
 }
