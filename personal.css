@@ -1,24 +1,236 @@
 body{
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #cover{
     width: 100%;
     height: 100%;
     margin: 0;
-    display: table;
-    overflow: hidden!important;
+    overflow-x: hidden;
     position: fixed;
 }
 
-#txt{
+#Limage{
+    width: 100%;
+    height: inherit;
+    background-image: url("Bround.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Grad{
+    height: 8vmax;
+background: rgba(0,0,0,1);
+background: -moz-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(bottom, right top, color-stop(0%, rgba(0,0,0,.85)), color-stop(100%, rgba(0,0,0,0)));
+background: -webkit-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#Darrow{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+p{
+    font-size: 1.25vmax;
+}
+
+h1{
+    margin-top: 0;
+    font-size: 2.3vmax;
+}
+
+#WhatIcanDoHolder{
+    display: flex;
+    text-align: center;
+    width: 40vmax;
+    margin: auto;
+}
+
+#WebCircle{
+    display: table;
+    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
+    width: 10vmax;
+	height: 10vmax;
+    background-color: white;
+	-moz-border-radius: 5vmax;
+	-webkit-border-radius: vmax;
+	border-radius: 5vmax;
+}
+
+#AppCircle{
+    display: table;
+    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
+    width: 10vmax;
+	height: 10vmax;
+    background-color: white;
+	-moz-border-radius: 5vmax;
+	-webkit-border-radius: vmax;
+	border-radius: 5vmax;
+}
+
+#GamesCircle{
+    display: table;
+    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
+    width: 10vmax;
+	height: 10vmax;
+    background-color: white;
+	-moz-border-radius: 5vmax;
+	-webkit-border-radius: vmax;
+	border-radius: 5vmax;
+}
+
+#WebsitesHolder{
+    margin: auto;
+}
+
+#AppsHolder{
+    margin: auto;
+}
+
+#GamesHolder{
+    margin: auto;
+}
+
+#WebIcon{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    font-size: 5vmax;
-    padding-bottom: 8vmax;
 }
+
+#AppIcon{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#GamesIcon{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#WebsTitle{
+    font-size: 1.5vmax;
+    margin-top: .5vmax;
+    margin-bottom: .5vmax;
+}
+
+#AppsTitle{
+    font-size: 1.5vmax;
+    margin-top: .5vmax;
+    margin-bottom: .5vmax;
+}
+
+#GameTitle{
+    font-size: 1.5vmax;
+    margin-top: .5vmax;
+    margin-bottom: .5vmax;
+}
+
+#WebExplanation{
+    width: 10vmax;
+    font-size: 1vmax;
+    margin-top: .2vmax;
+}
+
+#AppExplanation{
+    width: 10vmax;
+    font-size: 1vmax;
+    margin-top: .2vmax;
+}
+
+#GameExplanation{
+    width: 10vmax;
+    font-size: 1vmax;
+    margin-top: .2vmax;
+}
+
+#ContentHolder{
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vmax;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#MeImageHolder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    width: 11.3vmax;
+    height: 11.3vmax;
+    border: .2vmax solid black;
+    border-radius: 100vmax;
+}
+
+#Foborder{
+    overflow: hidden;
+    border-radius: 100vmax;
+    width: 10.8vmax;
+    height: 10.8vmax;
+    overflow: hidden;
+    border: .3vmax solid transparent;
+}
+
+
+#MeImage{
+    margin-top: .5vmax;
+    margin-bottom: auto;
+    margin-left: 0.0vmax;
+    margin-right: .9vmax;
+    width: 10vmax;
+    height: 10vmax;
+    background-image: url("Pic2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#MainContent{
+    width: 43vmax;
+    flex-shrink: 0;
+}
+
+#blanker{
+    width: 11.5vmax;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #zHolder{
     position: absolute;
@@ -28,6 +240,7 @@ body{
 }
 
 #zIn{
+    overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -48,6 +261,8 @@ body{
     -webkit-animation-duration: .5s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
     animation-name: zIn;
     animation-duration: .5s;
 }
