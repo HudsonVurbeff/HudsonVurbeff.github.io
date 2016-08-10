@@ -208,6 +208,7 @@ h1{
 #MainContent{
     width: 43vmax;
     flex-shrink: 0;
+    margin-bottom: 9vmax;
 }
 
 #blanker{
