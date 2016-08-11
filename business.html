@@ -1,287 +1,99 @@
-body{
-    margin: 0;
-    overflow-x: hidden;
-}
+ <html>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.scrollintoview.min.js"></script>
+    <link href="business.css" rel="stylesheet"/>
+    <script src="business.js"></script>
+    <body>
+        <div id="cover">
+            <div id="Limage">
+                <div id="MeImageHolder"><div id="Foborder"><div id="MeImage"></div></div></div>
+                <div id="Grad">
+                    <div id="Darrow">
+                        <svg fill="#757575" height="3vmax" viewBox="0 0 24 24" width="3vmax" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" fill="#757575"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div id="ContentHolder">
+                <div id="MainContent">
+                    <h1>About Me</h1>
+                    <p>Style too own civil out along. Perfectly offending attempted add arranging age gentleman concluded. Get who uncommonly our expression ten increasing considered occasional travelling. Ever read tell year give may men call its. Piqued son turned fat income played end wicket. To do noisy downs round an happy books. 
 
-#cover{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden;
-    position: fixed;
-}
+Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. Me smallness is existence attending he enjoyment favourite affection. Delivered is to ye belonging enjoyment preferred. Astonished and acceptance men two discretion. Law education recommend did objection how old. 
 
-#Limage{
-    width: 100%;
-    height: inherit;
-    background-image: url("Mountains.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. 
 
-#Grad{
-    height: 8vmax;
-    background: rgba(0,0,0,1);
-    background: -moz-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(bottom, right top, color-stop(0%, rgba(0,0,0,.85)), color-stop(100%, rgba(0,0,0,0)));
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-    background: -o-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-    background: -ms-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-    background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-#Darrow{
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 0;
-}
-
-p{
-    font-size: 1.25vmax;
-}
-
-h1{
-    margin-top: 0;
-    font-size: 2.3vmax;
-}
-
-#WhatIcanDoHolder{
-    display: flex;
-    text-align: center;
-    width: 40vmax;
-    margin: auto;
-}
-
-#WebCircle{
-    display: table;
-    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
-    width: 10vmax;
-	height: 10vmax;
-    background-color: white;
-	-moz-border-radius: 5vmax;
-	-webkit-border-radius: vmax;
-	border-radius: 5vmax;
-}
-
-#AppCircle{
-    display: table;
-    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
-    width: 10vmax;
-	height: 10vmax;
-    background-color: white;
-	-moz-border-radius: 5vmax;
-	-webkit-border-radius: vmax;
-	border-radius: 5vmax;
-}
-
-#GamesCircle{
-    display: table;
-    box-shadow: -5px 5px 12px -1px rgba(0,0,0,0.41);
-    width: 10vmax;
-	height: 10vmax;
-    background-color: white;
-	-moz-border-radius: 5vmax;
-	-webkit-border-radius: vmax;
-	border-radius: 5vmax;
-}
-
-#WebsitesHolder{
-    margin: auto;
-}
-
-#AppsHolder{
-    margin: auto;
-}
-
-#GamesHolder{
-    margin: auto;
-}
-
-#WebIcon{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#AppIcon{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#GamesIcon{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#WebsTitle{
-    font-size: 1.5vmax;
-    margin-top: .5vmax;
-    margin-bottom: .5vmax;
-}
-
-#AppsTitle{
-    font-size: 1.5vmax;
-    margin-top: .5vmax;
-    margin-bottom: .5vmax;
-}
-
-#GameTitle{
-    font-size: 1.5vmax;
-    margin-top: .5vmax;
-    margin-bottom: .5vmax;
-}
-
-#WebExplanation{
-    width: 10vmax;
-    font-size: 1vmax;
-    margin-top: .2vmax;
-}
-
-#AppExplanation{
-    width: 10vmax;
-    font-size: 1vmax;
-    margin-top: .2vmax;
-}
-
-#GameExplanation{
-    width: 10vmax;
-    font-size: 1vmax;
-    margin-top: .2vmax;
-}
-
-#ContentHolder{
-    justify-content: center;
-    text-align: center;
-    margin-top: 5vmax;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-
-#MeImageHolder{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    width: 11.3vmax;
-    height: 11.3vmax;
-    border: .2vmax solid black;
-    border-radius: 100vmax;
-}
-
-#Foborder{
-    overflow: hidden;
-    border-radius: 100vmax;
-    width: 10.8vmax;
-    height: 10.8vmax;
-    overflow: hidden;
-    border: .3vmax solid transparent;
-}
-
-
-#MeImage{
-    margin-top: .5vmax;
-    margin-bottom: auto;
-    margin-left: 0.0vmax;
-    margin-right: .9vmax;
-    width: 10vmax;
-    height: 10vmax;
-    background-image: url("Pic2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#MainContent{
-    width: 43vmax;
-    flex-shrink: 0;
-    margin-bottom: 9vmax;
-}
-
-#blanker{
-    width: 11.5vmax;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#zHolder{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-#zIn{
-    overflow: hidden;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    
-    width: 140vmax;
-	height: 140vmax;
-    background-color: black;
-	-moz-border-radius: 70vmax;
-	-webkit-border-radius: 70vmax;
-	border-radius: 70vmax;
-    
-    -webkit-animation-name: zIn;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    animation-name: zIn;
-    animation-duration: .5s;
-}
-
-/* Standard syntax */
-@keyframes zIn {
-    0%{
-    width: 140vmax;
-	height: 140vmax;
-	-moz-border-radius: 70vmax;
-	-webkit-border-radius: 70vmax;
-	border-radius: 70vmax;
-    }
-    100%{
-    width: 0vmax;
-	height: 0vmax;
-	-moz-border-radius: 0vmax;
-	-webkit-border-radius: 0vmax;
-	border-radius: 0vmax;
-    }
-}
+Letter wooded direct two men indeed income sister. Impression up admiration he by partiality is. Instantly immediate his saw one day perceived. Old blushes respect but offices hearted minutes effects. Written parties winding oh as in without on started. Residence gentleman yet preserved few convinced.</p>
+                    <h1>What I Can Do</h1>
+                    <div id="WhatIcanDoHolder">
+                        <div id="WebsitesHolder">
+                            <div id="WebCircle">
+                                <div id="WebIcon">
+                                    <svg fill="#000000" height="3.5vmax" viewBox="0 0 24 24" width="3.5vmax" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+                                        <path d="M0 0h24v24H0z" fill="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p id="WebsTitle">Websites</p>
+                            <p id="WebExplanation">Blah blah blah blah balh blah blah blah blah</p>
+                        </div>
+                        <div id="AppsHolder">
+                            <div id="AppCircle">
+                                <div id="AppIcon">
+                                    <svg fill="#000000" height="3.5vmax" viewBox="0 0 24 24" width="3.5vmax" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p id="AppsTitle">Apps</p>
+                            <p id="AppExplanation">Blah blah blah blah balh blah blah blah blah</p>
+                        </div>
+                        <div id="GamesHolder">
+                            <div id="GamesCircle">
+                                <div id="GamesIcon">
+                                    
+                                    
+                                    
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="6.5vmax" height="6.5vmax" viewBox="0 0 800 566" enable-background="new 0 0 800 566" xml:space="preserve">
+<g>
+	<path d="M492.103,120.099c-30.834,0-156.866,0.167-184.557,0c-27.691-0.168-50.033,13.531-59.948,26.448
+		c-60.332,78.478-145.338,290.118-26.874,297.659c70.609,4.496,91.702-86.104,160.392-94.133c7.324,0.21,14.893,0.392,23.732,0
+		c79.839-3.574,98.9,101.296,173.972,96.52c116.725-7.414,35.915-214.725-24.215-296.373
+		C543.685,135.375,522.935,120.099,492.103,120.099z"/>
+	<path fill="#FFFFFF" d="M338.686,214.23h-14.292v-14.299c0-11.185-9.07-20.262-20.255-20.262c-11.192,0-20.262,9.077-20.262,20.262
+		v14.299h-14.299c-11.199,0-20.262,9.063-20.262,20.262c0,11.186,9.063,20.248,20.262,20.248h14.299v14.299
+		c0,11.199,9.07,20.262,20.262,20.262c11.185,0,20.255-9.063,20.255-20.262V254.74h14.292c11.186,0,20.262-9.063,20.262-20.248
+		C358.949,223.293,349.872,214.23,338.686,214.23z"/>
+	<g>
+		<path fill="#FFFFFF" d="M516.01,198.968c0,11.199-9.062,20.275-20.248,20.275c-11.199,0-20.262-9.076-20.262-20.275
+			c0-11.171,9.063-20.248,20.262-20.248C506.947,178.72,516.01,187.796,516.01,198.968z"/>
+		<path fill="#FFFFFF" d="M516.01,269.989c0,11.199-9.062,20.276-20.248,20.276c-11.199,0-20.262-9.077-20.262-20.276
+			c0-11.171,9.063-20.248,20.262-20.248C506.947,249.741,516.01,258.817,516.01,269.989z"/>
+		<path fill="#FFFFFF" d="M531.271,254.74c-11.185,0-20.262-9.077-20.262-20.248c0-11.199,9.077-20.276,20.262-20.276
+			c11.185,0,20.263,9.077,20.263,20.276C551.534,245.664,542.457,254.74,531.271,254.74z"/>
+		                          <path fill="#FFFFFF" d="M460.251,254.74c-11.186,0-20.263-9.077-20.263-20.248c0-11.199,9.077-20.276,20.263-20.276
+			                                         c11.184,0,20.262,9.077,20.262,20.276C480.513,245.664,471.435,254.74,460.251,254.74z"/>
+	                                       </g>
+                                            </g>
+                                    </svg>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <p id="GameTitle">Games</p>
+                            <p id="GameExplanation">Blah blah blah blah balh blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="zHolder"><div id="zIn"></div></div>
+        </div>
+    </body>
+</html>
