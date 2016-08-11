@@ -215,6 +215,33 @@ h1{
     width: 11.5vmax;
 }
 
+#ContactButton{
+    width: 7vmax;
+    height: 2.3vmax;
+    background-color: aqua;
+    font-size: 1.3vmax;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.3vmax;
+    margin-top: 3.4vmax;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
