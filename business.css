@@ -14,7 +14,7 @@ body{
 #Limage{
     width: 100%;
     height: inherit;
-    background-image: url("Bround.png");
+    background-image: url("Mountains.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,13 +22,13 @@ body{
 
 #Grad{
     height: 8vmax;
-background: rgba(0,0,0,1);
-background: -moz-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-background: -webkit-gradient(bottom, right top, color-stop(0%, rgba(0,0,0,.85)), color-stop(100%, rgba(0,0,0,0)));
-background: -webkit-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-background: -o-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-background: -ms-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
-background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(bottom, right top, color-stop(0%, rgba(0,0,0,.85)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
